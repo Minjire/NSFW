@@ -167,21 +167,3 @@ def main():
 
 # %%
 main()
-
-# %%
-'''
-data = np.array([np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]), np.array([3, 3, 4, 5, 2, 5]), np.array([7, 5, 4, 90])])
-# save to npy file
-print(data.shape)
-np.save('fnumpy.npy', data)
-np.savez_compressed('data.npz', data)
-# %%
-array_reloaded = np.load('fnumpy.npy', allow_pickle=True)
-# extract the first array
-
-print(array_reloaded)
-dict_data = np.load('data.npz', allow_pickle=True)
-# extract the first array
-data = dict_data['arr_0']
-# print the array
-print(data)'''
